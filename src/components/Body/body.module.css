@@ -1,0 +1,86 @@
+.root {
+	background-image: url("/img/background-main.png");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	padding: 2rem 50px;
+	max-width: 1800px;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	height: 100vh;
+}
+
+.content {
+	align-items: center;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	margin: 0;
+	padding: 0rem 5rem 0;
+	width: 100%;
+	position: relative;
+}
+.overlay1 {
+	background-color: rgba(0, 30, 70, 0.2);
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	z-index: 0;
+}
+
+.overlay2 {
+	animation: animation 5s infinite;
+	border-radius: 1rem;
+	position: absolute;
+	width: 100%;
+	min-height: 70vh;
+	z-index: 5;
+}
+
+@keyframes animation {
+	0% {
+		background-color: rgba(0, 0, 0, 0.95);
+		filter: blur(4em);
+	}
+	50% {
+		background-color: rgba(0, 0, 0, 0.7);
+		filter: blur(6em);
+	}
+	100% {
+		background-color: rgba(0, 0, 0, 0.95);
+		filter: blur(4em);
+	}
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+	.root {
+		overflow: auto;
+	}
+	.container {
+		padding: 1rem;
+	}
+	.content {
+		flex-direction: column-reverse;
+		gap: 0;
+		padding: 0 1rem;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+	.container {
+		padding: 0 3rem;
+	}
+	.content {
+		padding: 0 3rem;
+	}
+}

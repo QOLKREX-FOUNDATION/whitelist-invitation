@@ -1,0 +1,19 @@
+.content {
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+
+.title {
+	text-align: left;
+}
+
+.link {
+	color: rgb(4, 135, 241);
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+	.title {
+		text-align: center;
+	}
+}

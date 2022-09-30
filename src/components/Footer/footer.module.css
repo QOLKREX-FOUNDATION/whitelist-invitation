@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    gap: 4rem;
+    width: 50%;
+}
+
+.copyrigth {
+    text-align: center;
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+		gap: 0;
+        justify-content: center;
+
+	}
+    .logo{
+        justify-content: space-around;
+        width: 100%;
+
+    }
+}

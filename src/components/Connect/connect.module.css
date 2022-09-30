@@ -1,0 +1,15 @@
+
+.wallet {
+    align-items: center;
+    background-color: rgb(246, 246, 248);
+	cursor: pointer;
+    display:flex;
+    font-weight: bold;
+    justify-content: space-between;
+    outline:none;
+    transition: .5s background-color;
+}
+
+.wallet:hover {
+    background-color: #fff;
+}
