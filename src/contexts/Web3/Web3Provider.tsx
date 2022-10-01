@@ -3,12 +3,9 @@ import { useCallback, useEffect, useMemo, useReducer } from "react";
 import { IProps } from "./interfaces";
 import { Web3Context } from "./Web3Context";
 import { Web3Reducer } from "./Web3Reducer";
-import { WEB3_NETWORK, WEB3_NETWORKWAR } from "../../config";
 
 const INIT = {
 	account: "",
-	network: new Web3(new Web3.providers.HttpProvider(WEB3_NETWORK)),
-	networkWar: new Web3(new Web3.providers.HttpProvider(WEB3_NETWORKWAR)),
 	wallet: null,
 	provider: null,
 	providerString: "",
