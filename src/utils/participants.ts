@@ -1,7 +1,5 @@
 import Swal from "sweetalert2";
-
-const api = "http://localhost:4000/api/participants";
-const linkReferred = "http://localhost:3000?referred=";
+import { api, linkReferred } from "../config";
 
 export const getCount = async () => {
 	const content = await fetch(`${api}/`);
