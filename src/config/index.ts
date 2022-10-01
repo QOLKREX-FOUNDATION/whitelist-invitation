@@ -14,7 +14,7 @@ export const CHAIN_ID = PRODUCTION ? CHAIN_ID_MAINNET : CHAIN_ID_TESTNET;
 export const NETWORK_MAINNET = PRODUCTION ? "mainnet" : "testnet";
 
 export const api = PRODUCTION
-	? "http://api1.cryptoblockperu.qolkrex.foundation/api/participants"
+	? "https://api1.cryptoblockperu.qolkrex.foundation/api/participants"
 	: "http://localhost:4000/api/participants";
 
 export const linkReferred = PRODUCTION
