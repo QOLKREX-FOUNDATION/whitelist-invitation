@@ -1,5 +1,6 @@
 .input {
-    color: #222;
+    background-color: #fff!important;
+    color: #222!important;;
     padding: 1rem 2rem;
     text-transform: uppercase;
     width: 100%;
