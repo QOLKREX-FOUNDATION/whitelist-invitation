@@ -13,8 +13,8 @@ export const Footer = () => {
 
                     <Image
                         src='/img/logos/estrella-andina.png'
-                        width={150}
-                        height={45}
+                        width={140}
+                        height={40}
                         alt="Estrella Andina"
                     />
                 </a>
@@ -27,9 +27,39 @@ export const Footer = () => {
 
                     <Image
                         src='/img/logos/celo-logo-color-reverse.png'
-                        width={180}
-                        height={50}
+                        width={150}
+                        height={40}
                         alt="Celo"
+                    />
+                </a>
+
+                
+                <a
+                    href='https://www.linkedin.com/company/coini-app/'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <Image
+                        src='/img/logos/coini.png'
+                        width={150}
+                        height={40}
+                        alt="coini"
+                    />
+                </a>
+
+                
+                <a
+                    href='#'
+                    // target="_blank"
+                    // rel="noopener noreferrer"
+                >
+
+                    <Image
+                        src='/img/logos/comandante.png'
+                        width={140}
+                        height={40}
+                        alt="comandante"
                     />
                 </a>
             </div>
