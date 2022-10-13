@@ -11,7 +11,7 @@ export const NFT = () => {
 		>
 		
         {/* <Image src="/img/nft.png" width={400} height={300} objectFit="contain" alt="nft" priority/> */}
-			<video muted autoPlay loop
+			<video muted autoPlay loop preload="none" 
                 style={{
                     margin: '2rem 0 0',
                     width: "80%",
