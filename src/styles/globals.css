@@ -34,3 +34,7 @@ a {
 	width: 100%;
 }
 
+.sin-margin div{
+  padding: 0!important;
+  height: 100vh;
+}

@@ -18,7 +18,6 @@ export const Web3Provider = ({ children }: IProps) => {
 	const [state, dispatch] = useReducer(Web3Reducer, INIT);
 
 	const handleWeb3 = useCallback((provider: any, providerString: string) => {
-
 		dispatch({
 			type: "provider",
 			payload: {
@@ -71,6 +70,13 @@ export const Web3Provider = ({ children }: IProps) => {
 			});
 		}
 	}, [state.wallet, state.account, handleChainId]);
+
+	useEffect(() => {
+		handleToken(
+			sessionStorage.getItem("token") ?? "",
+			sessionStorage.getItem("authToken") ?? ""
+		);
+	}, []);
 
 	const web3 = useMemo(() => state, [state]);
 	return (

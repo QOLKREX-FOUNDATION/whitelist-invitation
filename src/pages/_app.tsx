@@ -1,7 +1,6 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Web3Provider } from '../contexts/Web3/Web3Provider';
-import { PreloaderProvider } from '../contexts/Preloader/PreloaderProvider';
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import { Providers } from "../Providers";
 
 declare global {
 	interface Window {
@@ -9,13 +8,12 @@ declare global {
 	}
 }
 
-
 function MyApp({ Component, pageProps }: AppProps) {
-	return <Web3Provider>
-		<PreloaderProvider>
+	return (
+		<Providers>
 			<Component {...pageProps} />
-		</PreloaderProvider>
-	</Web3Provider>
+		</Providers>
+	);
 }
 
-export default MyApp
+export default MyApp;

@@ -1,5 +1,5 @@
 export interface IInput {
-	type: string;
+	type?: string;
 	name: string;
 	value: string;
     required?:boolean

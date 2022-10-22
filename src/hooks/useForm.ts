@@ -9,10 +9,10 @@ interface IUseForm {
 		email: string;
 		nickName: string;
 	};
-	queryId: string;
+	queryId?: string;
 }
 
-export const useForm = ({ initial, queryId }:IUseForm) => {
+export const useForm = ({ initial, queryId="" }:IUseForm) => {
 	const [form, setForm] = useState(initial);
 
 	const [send, setSend] = useState(false);

@@ -1,0 +1,62 @@
+.container {
+    border-radius: 20px;
+    border: none;
+    height: 80%;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title > button {
+    width: 100%;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.table th {
+    background-color: rgb(41, 121, 241)!important;
+    color:#fff!important;
+    font-weight: bold;
+
+}
+
+.table td, .table th {
+    color: #222;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.statusN {
+    background-color: red!important;
+    color: #fff!important;
+}
+
+.statusW {
+    background-color: yellowgreen!important;
+    color: #fff!important;
+}
+
+.statusS {
+    background-color: limegreen!important;
+    color: #fff!important;
+}
+
+.statusR {
+    background-color: rgb(5, 100, 145)!important;
+    color: #fff!important;
+}
+
+
